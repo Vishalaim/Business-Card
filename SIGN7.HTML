@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <title>Business Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f9f9f9;
+    }
+
+    .card {
+      width: 800px;
+      height: 300px;
+      border: 0px solid hwb(186 69% 5%);
+      display: flex;
+      background: #ffffff;
+      position: relative;
+      overflow: hidden;
+      border-color: #f27a24;
+    }
+
+    .card::before,
+    .card::after {
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 100%;
+      background-color: #177497;
+      border-radius: 50%;
+     
+    }
+
+    .card::before {
+      left: 0;
+
+    }
+
+    .card::after {
+      right: 0;
+    }
+
+    .content {
+      width: 50%;
+      padding: 20px;
+    }
+
+    .content h1 {
+      font-size: 45px;
+      color: #2a4738ea;
+      margin: 0;
+    }
+
+    .content h2 {
+      font-size: 19px;
+      color: #b74c09ea;
+      margin: 5px 0 20px;
+    }
+
+    .info {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .info span {
+      color: #ffe95a;
+    }
+    .info p {
+      color: #050505;
+    }
+
+    .divider {
+      width: 15px;
+      background: #177497;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    } 
+
+    .divider::before {
+      content: '';
+      display: block;
+      width: 10px;
+      height: 30%;
+      background: #f27a24;
+      border-radius: 50%;
+    }
+
+    .logo {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .logo img {
+      width: 350px;
+      margin-bottom: 0px;
+      /* Apply the animation */
+      animation: rotate 5s linear infinite;
+
+    }
+
+    .logo h2 {
+      color: #eff5f5;
+      margin: 10px 0;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .social-icons span {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #eee;
+      border-radius: 50%;
+      font-size: 18px;
+      color: #333;
+      border-radius: 50%;
+    }
+
+    /* Define the rotation animation */
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg)
+      }
+      100% {
+        transform:rotate(linear);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="content">
+      <h1><B>Safety & complaince</B></h1>
+      <h2><b>Safety&Complaince Team</b></h2>  
+      <div class="info">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      <!--<p><b><span>📞</span> <i class="fab fa-whatsapp fa-1.5x" style="color: #25D366;"></i> <a href="https://wa.me/12175595995" target="_blank">+1 217 559 5995</a></b></p>-->
+        <p><b><span>📠</span> +1(217)336-0088 || Ext: 2</b></p>
+        <p><b><span>📧</span>Safety@hrfreightway.com</b></p>
+      <!--  <p><b><span>🌐</span> http://hrfreightway.com/</b></p>-->
+     <!-- <p><b><span></span>8832 Kenneth Dr,<br>#2F Des Plaines IL 60016</b></p> -->  
+     <p><b><i class="fas fa-map-marker-alt"></i> 8832 Kenneth Dr, #2F Des Plaines, IL 60016</b></p>
+
+      </div>
+    </div>  
+    <div class="divider"></div>
+    <div class="logo">
+      <img src="file:///C:/Users/vishal/Desktop/logo/HR logo.jpg" alt="Logo">
+      <h2> </h2>
+    </div>
+  </div>
+</body>
+</html>
